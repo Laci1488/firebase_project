@@ -17,7 +17,7 @@ export const CreateForm = () => {
 
   const schema = yup.object().shape({
     title: yup.string().required("You must add a title!"),
-    description: yup.string().max(50).required("You must add a description!"),
+    description: yup.string().max(200).required("You must add a description!"),
   });
 
   const {
